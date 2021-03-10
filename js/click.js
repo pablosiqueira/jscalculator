@@ -144,25 +144,26 @@ function undo(){
     size = display.length;
     if (size < 2){
         erase();
-    }
-    if (cont == 0){
-        if (fraction == 1){
-            fraction = 0;
-        }else{
-            if (fraction >1){
-            var a1 = num_array[cont] * Math.pow(10,fraction-1);
-            console.log("a1 " + a1);
-            a1 = (a1/10 | 0);
-            console.log("a2 " + a1);
-            num_array[cont] = a1/Math.pow(10,(fraction-2));
-            console.log("n_a " + num_array[cont]);
-            fraction--;   
-            }
-        }
-        display = display.slice(0,size-1)
+    }else
+    if (fraction == 1){
+        fraction = 0;
+        display = display.slice(0,size-1);
         document.getElementById("display-calc").value = display;
-    }else{
-        op_now = op[cont-1];
+    }else
+    if (fraction > 1){
+        var a1 = num_array[cont] * Math.pow(10,fraction-1);
+        console.log("a1 " + a1);
+        a1 = (a1/10 | 0);
+        console.log("a2 " + a1);
+        num_array[cont] = a1/Math.pow(10,(fraction-2));
+        n_num = num_array[cont];
+        console.log("n_a " + num_array[cont]);
+        fraction--;
+        display = display.slice(0,size-1);
+        document.getElementById("display-calc").value = display;   
+    }else
+if (cont > 0 && fraction == 0){
+    op_now = op[cont-1];
         switch (op_now) {
             case 1:
                 if (cont == 1){
@@ -200,6 +201,9 @@ function undo(){
         n_num = num_array[cont];
         display = display.slice(0,size-3);
         document.getElementById("display-calc").value = display;
-        }
-        
+        }else
+        n_num = (n_num/10 | 0);
+        num_array[cont] = n_num;
+        display = display.slice(0,size-1);
+        document.getElementById("display-calc").value = display;   
 }
