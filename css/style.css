@@ -1,0 +1,161 @@
+.font-satisfy{
+    font-family: 'Satisfy', cursive;
+    font-size: x-large;
+}
+
+body{
+    background-image: url(../img/wooden-table-background.jpg);
+    background-position: center;
+}
+
+.bottom-bar{
+    border-bottom: 20px solid black;
+}
+
+.min-margin{
+    margin-top: .1rem;
+}
+.disp-text{
+    border-color: black;
+    border-width: 5px;
+
+}
+.keyboard{
+    max-width: 300px;
+    background-color:darkslategrey;
+}
+
+
+.font-yellowtail{
+    font-family: 'Yellowtail', cursive;
+}
+
+.font-josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner-area{
+    width: 100%;
+    height: 230px;
+    
+}
+
+.main-text{
+    color:black;
+    position: relative;
+    top: 30%;
+    font-size: xxx-large; 
+}
+
+.img-ufrn{
+    height: 5rem;
+    width: 14rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.img-lut{
+    height: 4rem;
+    width: 14rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.img-mp{
+    height: 6rem;
+    width: 14rem;
+   padding-top: .5rem;
+}
+
+.img-contact{
+    height: 100px;
+    width: 100px;
+}
+
+.back-gray{
+    background-color:	#78757C;
+    color: black;
+}
+.font-bio{
+    color: white;
+}
+.card{
+    background:transparent;
+    border-width: 2px;
+    border-color: #404040;
+}
+
+.link-net{
+    color: black;
+}
+
+.link-net:hover {
+    color:white;
+}
+
+.img-elk{
+    height: 90px;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    width: 80px;
+}
+
+.display{
+    max-width: 270px;
+    margin-top: 15px;
+    
+}
+
+.form-control{
+    text-align: end;
+    width: 100%;
+    max-width: 280px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
+}
+
+.button-number, .button-zero{
+    background-color: black;
+    margin: 5px;
+}
+
+.button-number{
+    width: 50px ;
+}
+
+.button-zero{
+    width: 100px ;
+}
+
+.button-undo{
+    background-color: rgb(153, 24, 41);
+    width: 76px;
+    margin: 5px;
+}
+
+.button-font-border, .button-reset{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-width: 2.5px;
+    border-color: darkslategray;
+    border-style:outset;
+    font-size: 20px;
+    padding: 10 rem;
+}
+
+
+.button-op{
+    background-color: gray;
+    width: 50px ;
+    margin: 5px;
+}
+
+.button-reset{
+    background-color: orangered;
+    width: 80px ;
+    margin: 5px;
+}
+
